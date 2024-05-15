@@ -1,7 +1,9 @@
 # Homework 1: farmersmarket.db
 
-![Homework_1](https://github.com/Navneettc/sql/assets/167141238/d5a82e27-4b20-47c0-add2-031867ddfd31)
+![Homework_1](![image](https://github.com/Navneettc/sql/assets/167141238/737712c6-3dc3-4a02-89d4-b28ce5bf55a8)
 
+
+Completed assignment
 
 - Please upload your completed assignments to Google Drive.
 - Due on Thursday, February 22, at 11:59pm
