@@ -1,5 +1,8 @@
 # Homework 1: farmersmarket.db
 
+![Homework_1](https://github.com/Navneettc/sql/assets/167141238/d5a82e27-4b20-47c0-add2-031867ddfd31)
+
+
 - Please upload your completed assignments to Google Drive.
 - Due on Thursday, February 22, at 11:59pm
 - Weight: 8% of total grade
