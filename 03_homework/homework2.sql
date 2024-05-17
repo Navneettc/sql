@@ -1,3 +1,5 @@
+
+
 HOME WORK 2 
 /* SELECT *
 FROM customer */
