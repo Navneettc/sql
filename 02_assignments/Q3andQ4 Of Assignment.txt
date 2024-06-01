@@ -1,0 +1,50 @@
+Question 3
+The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2?
+
+Hint, search type 1 vs type 2 slowly changing dimensions.
+
+Bonus: Are there privacy implications to this, why or why not?
+
+Type 1:
+
+CREATE TABLE CUSTOMER_ADDRESS (
+    CUSTOMER_ID INT PRIMARY KEY,
+    STREET VARCHAR(255),
+    CITY VARCHAR(100),
+    STATE VARCHAR(50),
+    ZIP_CODE VARCHAR(10)
+);
+
+Type 2:
+
+CREATE TABLE CUSTOMER_ADDRESS_HISTORY (
+    CUSTOMER_ID INT,
+    ADDRESS_ID INT,
+    STREET VARCHAR(255),
+    CITY VARCHAR(100),
+    STATE VARCHAR(50),
+    ZIP_CODE VARCHAR(10),
+    EFFECTIVE_DATE DATE,
+    EXPIRATION_DATE DATE
+);
+
+
+The table that will retrain the changes will be type 2, and the table that will override the changes is type 1.
+
+There are privacy implications of type 2 table as it keeps old information and new information. Its storing more information about the customer, and can be used for trend analysis.
+
+Since more information is stored, if not controled or protected properly, this information can cause harm to the customer since theres more private data that can exploited.
+
+
+
+Question 4
+Review the AdventureWorks Schema here
+
+Highlight at least two differences between it and your ERD. Would you change anything in yours?
+
+The first difference between that schema and my ERD is that the AdventureWorks Schema is divided into categories of the business. 
+Even thought the relationship is shown among different tables, the tables are subdivided into other schemas. 
+
+The second difference is that the AdventureWorks Scehema lists all the Primary, Foreign, and Unique key for all the tables, whereas my ERD does not.
+
+The one thing I would change in my ERD is to identify all the primary and foreign keys in my diagram.
